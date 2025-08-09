@@ -60,7 +60,7 @@ const Index = () => {
                 Umang Gupta
                 <span className="block heading-gradient">AI/ML Enthusiast & Full-Stack Developer</span>
               </h1>
-              <p className="text-muted-foreground max-w-xl">Ambitious Bachelor of Technology (BTech) professional with strong analytical skills and a proactive learner, eager to apply theoretical knowledge to real-world challenges. </p>
+              <p className="text-muted-foreground max-w-xl">Building Intelligent Solutions at the Intersection of AI/ML, IoT & Web Development</p>
               <div className="flex gap-3">
                 <Button variant="hero" size="xl" asChild>
                   <a href="#projects">View Projects</a>
@@ -73,11 +73,7 @@ const Index = () => {
             <div className="flex justify-center md:justify-end">
               <div className="relative size-48 md:size-64 rounded-full bg-secondary border border-border flex items-center justify-center glow-ring-strong">
                 <Avatar className="size-40 md:size-52 rounded-full ring-1 ring-border overflow-hidden">
-                  <AvatarImage
-                    src="https://i.postimg.cc/vZmh6Fyz/ma-potrait.jpg"
-                    alt="Umang Gupta portrait"
-                    loading="lazy"
-                  />
+                  <AvatarImage src="https://i.postimg.cc/vZmh6Fyz/ma-potrait.jpg" alt="Umang Gupta portrait" loading="lazy" />
                   <AvatarFallback className="text-3xl md:text-4xl font-heading">UG</AvatarFallback>
                 </Avatar>
               </div>
@@ -90,12 +86,10 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <article>
               <h2 className="text-3xl font-heading mb-4">About</h2>
-              <p className="text-muted-foreground mb-4">
-                B.Tech in Computer Science Engineering at Graphic Era (Deemed to be University), graduating 2026. Passionate about AI, Machine Learning, and building scalable web applications.
-              </p>
+              <p className="text-muted-foreground mb-4">Ambitious Bachelor of Technology (BTech) professional with strong analytical skills and a proactive learner, eager to apply theoretical knowledge to real-world challenges. Seeking for a position to leverage technical skills, contribute to team success, and grow within a dynamic tech environment.</p>
               <ul className="space-y-2 text-sm">
                 <li>• Research Internship: Multimodal Parkinson’s Detection project</li>
-                <li>• Hackathons & achievements: Smart India Hackathon finalist (team projects below)</li>
+                <li>• Hackathons & achievements: Selected at University level for Smart India Hackathon(team projects below)</li>
               </ul>
             </article>
             <aside className="space-y-4">
@@ -136,10 +130,7 @@ const Index = () => {
               <h3 className="font-heading text-xl mb-2">Full-Stack Development</h3>
               <p className="text-muted-foreground text-sm">MERN, REST APIs, authentication, deployments and performance-focused builds.</p>
             </div>
-            <div className="p-6 rounded-xl border border-border bg-card/60 hover:shadow-glow transition-shadow">
-              <h3 className="font-heading text-xl mb-2">UI Design</h3>
-              <p className="text-muted-foreground text-sm">Designing clean and modern interfaces with Figma & Canva.</p>
-            </div>
+            
           </div>
         </section>
 
