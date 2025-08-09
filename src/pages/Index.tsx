@@ -70,7 +70,7 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="flex justify-center md:justify-end">
+            <div className="flex justify-center md:justify-end mx-[20px] px-0">
               <div className="relative size-48 md:size-64 rounded-full bg-secondary border border-border flex items-center justify-center glow-ring-strong">
                 <Avatar className="size-40 md:size-52 rounded-full ring-1 ring-border overflow-hidden">
                   <AvatarImage src="https://i.postimg.cc/vZmh6Fyz/ma-potrait.jpg" alt="Umang Gupta portrait" loading="lazy" />
