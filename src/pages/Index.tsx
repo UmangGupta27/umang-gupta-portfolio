@@ -7,34 +7,48 @@ import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin } from "lucide-react";
-
 import lunar from "@/assets/projects/lunar.jpg";
 import parkinsons from "@/assets/projects/parkinsons.jpg";
 import crop from "@/assets/projects/crop.jpg";
 import compilers from "@/assets/projects/compilers.jpg";
-
 const Index = () => {
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({ title: "Thanks!", description: "Your message has been sent." });
+    toast({
+      title: "Thanks!",
+      description: "Your message has been sent."
+    });
     (e.currentTarget as HTMLFormElement).reset();
   };
-
-  const skills = [
-    { name: "Python", level: 90 },
-    { name: "C++", level: 80 },
-    { name: "TensorFlow", level: 85 },
-    { name: "PyTorch", level: 80 },
-    { name: "MERN", level: 80 },
-    { name: "PHP", level: 70 },
-    { name: "Docker", level: 65 },
-    { name: "SQL", level: 75 },
-  ];
-
-  return (
-    <div>
+  const skills = [{
+    name: "Python",
+    level: 90
+  }, {
+    name: "C++",
+    level: 80
+  }, {
+    name: "TensorFlow",
+    level: 85
+  }, {
+    name: "PyTorch",
+    level: 80
+  }, {
+    name: "MERN",
+    level: 80
+  }, {
+    name: "PHP",
+    level: 70
+  }, {
+    name: "Docker",
+    level: 65
+  }, {
+    name: "SQL",
+    level: 75
+  }];
+  return <div>
       <Header />
       <main id="home" className="container mx-auto">
         {/* Hero */}
@@ -45,9 +59,7 @@ const Index = () => {
                 Umang Gupta
                 <span className="block heading-gradient">AI/ML Enthusiast & Full-Stack Developer</span>
               </h1>
-              <p className="text-muted-foreground max-w-xl">
-                Building intelligent solutions with AI, Deep Learning & Modern Web Technologies
-              </p>
+              <p className="text-muted-foreground max-w-xl">Ambitious Bachelor of Technology (BTech) professional with strong analytical skills and a proactive learner, eager to apply theoretical knowledge to real-world challenges. </p>
               <div className="flex gap-3">
                 <Button variant="hero" size="xl" asChild>
                   <a href="#projects">View Projects</a>
@@ -106,9 +118,7 @@ const Index = () => {
         <section id="skills" className="py-16">
           <h2 className="text-3xl font-heading mb-6">Skills</h2>
           <div className="flex flex-wrap gap-3">
-            {skills.map((s) => (
-              <SkillBadge key={s.name} name={s.name} level={s.level} />
-            ))}
+            {skills.map(s => <SkillBadge key={s.name} name={s.name} level={s.level} />)}
           </div>
         </section>
 
@@ -131,34 +141,10 @@ const Index = () => {
         <section id="projects" className="py-16">
           <h2 className="text-3xl font-heading mb-6">Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ProjectCard
-              title="Lunar Crater Image Enhancement"
-              description="Smart India Hackathon entry enhancing lunar crater imagery using AI-based denoising and contrast techniques."
-              img={lunar}
-              tech={["Python", "OpenCV", "Deep Learning"]}
-              github="#"
-            />
-            <ProjectCard
-              title="Parkinson’s Disease Detection"
-              description="Deep Learning model leveraging multimodal data for early Parkinson’s detection."
-              img={parkinsons}
-              tech={["TensorFlow", "CNN", "Signal Processing"]}
-              github="#"
-            />
-            <ProjectCard
-              title="Crop Recommendation System"
-              description="AI system recommending optimal crops based on soil and climate data."
-              img={crop}
-              tech={["MERN", "ML", "Data Viz"]}
-              github="#"
-            />
-            <ProjectCard
-              title="Compiler & OS Tools"
-              description="CPU Scheduling Visualizer and SyCompiler Pro for educational OS & Compiler concepts."
-              img={compilers}
-              tech={["C++", "React", "Algorithms"]}
-              github="#"
-            />
+            <ProjectCard title="Lunar Crater Image Enhancement" description="Smart India Hackathon entry enhancing lunar crater imagery using AI-based denoising and contrast techniques." img={lunar} tech={["Python", "OpenCV", "Deep Learning"]} github="#" />
+            <ProjectCard title="Parkinson’s Disease Detection" description="Deep Learning model leveraging multimodal data for early Parkinson’s detection." img={parkinsons} tech={["TensorFlow", "CNN", "Signal Processing"]} github="#" />
+            <ProjectCard title="Crop Recommendation System" description="AI system recommending optimal crops based on soil and climate data." img={crop} tech={["MERN", "ML", "Data Viz"]} github="#" />
+            <ProjectCard title="Compiler & OS Tools" description="CPU Scheduling Visualizer and SyCompiler Pro for educational OS & Compiler concepts." img={compilers} tech={["C++", "React", "Algorithms"]} github="#" />
           </div>
         </section>
 
@@ -173,16 +159,14 @@ const Index = () => {
               <Button variant="hero" size="lg" type="submit">Send message</Button>
             </form>
             <div className="space-y-3 text-sm">
-              <a href="tel:+910000000000" className="flex items-center gap-3 hover:text-primary"><Phone/> +91 00000 00000</a>
-              <a href="mailto:umang@example.com" className="flex items-center gap-3 hover:text-primary"><Mail/> umang@example.com</a>
-              <a href="#" className="flex items-center gap-3 hover:text-primary"><Linkedin/> LinkedIn</a>
+              <a href="tel:+910000000000" className="flex items-center gap-3 hover:text-primary"><Phone /> +91 00000 00000</a>
+              <a href="mailto:umang@example.com" className="flex items-center gap-3 hover:text-primary"><Mail /> umang@example.com</a>
+              <a href="#" className="flex items-center gap-3 hover:text-primary"><Linkedin /> LinkedIn</a>
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
