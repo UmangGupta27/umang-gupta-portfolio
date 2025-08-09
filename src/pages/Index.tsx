@@ -165,7 +165,7 @@ const Index = () => {
               <Button variant="hero" size="lg" type="submit">Send message</Button>
             </form>
             <div className="space-y-3 text-sm">
-              <a href="tel:+910000000000" className="flex items-center gap-3 hover:text-primary"><Phone /> +91 00000 00000</a>
+              <a href="tel:+919548705612" className="flex items-center gap-3 hover:text-primary"><Phone /> +91 9548705612</a>
               <a href="mailto:umang@example.com" className="flex items-center gap-3 hover:text-primary"><Mail /> umang@example.com</a>
               <a href="#" className="flex items-center gap-3 hover:text-primary"><Linkedin /> LinkedIn</a>
             </div>
