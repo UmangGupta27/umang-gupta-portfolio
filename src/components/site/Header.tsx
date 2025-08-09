@@ -25,7 +25,7 @@ const Header = () => {
         </ul>
         <div className="flex items-center gap-2">
           <a href="#" aria-label="GitHub" className="p-2 rounded-md hover:bg-accent transition-colors"><Github className="size-5"/></a>
-          <a href="#" aria-label="LinkedIn" className="p-2 rounded-md hover:bg-accent transition-colors"><Linkedin className="size-5"/></a>
+          <a href="https://www.linkedin.com/in/umanggpt" aria-label="LinkedIn" className="p-2 rounded-md hover:bg-accent transition-colors"><Linkedin className="size-5"/></a>
           <a href="/resume.pdf" className="hidden sm:block"><Button variant="hero" size="sm"><FileDown className="mr-2"/>Resume</Button></a>
           <ThemeToggle />
         </div>

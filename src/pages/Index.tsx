@@ -166,8 +166,8 @@ const Index = () => {
             </form>
             <div className="space-y-3 text-sm">
               <a href="tel:+919548705612" className="flex items-center gap-3 hover:text-primary"><Phone /> +91 9548705612</a>
-              <a href="mailto:umang@example.com" className="flex items-center gap-3 hover:text-primary"><Mail /> umang@example.com</a>
-              <a href="#" className="flex items-center gap-3 hover:text-primary"><Linkedin /> LinkedIn</a>
+              <a href="mailto:guptaumang659@gmail.com" className="flex items-center gap-3 hover:text-primary"><Mail /> guptaumang659@gmail.com</a>
+              <a href="https://www.linkedin.com/in/umanggpt" className="flex items-center gap-3 hover:text-primary"><Linkedin /> LinkedIn</a>
             </div>
           </div>
         </section>
