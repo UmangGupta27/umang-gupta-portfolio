@@ -11,6 +11,7 @@ import lunar from "@/assets/projects/lunar.jpg";
 import parkinsons from "@/assets/projects/parkinsons.jpg";
 import crop from "@/assets/projects/crop.jpg";
 import compilers from "@/assets/projects/compilers.jpg";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Index = () => {
   const {
     toast
@@ -71,9 +72,14 @@ const Index = () => {
             </div>
             <div className="flex justify-center md:justify-end">
               <div className="relative size-48 md:size-64 rounded-full bg-secondary border border-border flex items-center justify-center glow-ring-strong">
-                <div className="size-40 md:size-52 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <span className="text-3xl md:text-4xl font-heading">UG</span>
-                </div>
+                <Avatar className="size-40 md:size-52 rounded-full ring-1 ring-border overflow-hidden">
+                  <AvatarImage
+                    src="https://i.postimg.cc/vZmh6Fyz/ma-potrait.jpg"
+                    alt="Umang Gupta portrait"
+                    loading="lazy"
+                  />
+                  <AvatarFallback className="text-3xl md:text-4xl font-heading">UG</AvatarFallback>
+                </Avatar>
               </div>
             </div>
           </div>
