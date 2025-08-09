@@ -11,6 +11,7 @@ import lunar from "@/assets/projects/lunar.jpg";
 import parkinsons from "@/assets/projects/parkinsons.jpg";
 import crop from "@/assets/projects/crop.jpg";
 import compilers from "@/assets/projects/compilers.jpg";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Index = () => {
   const {
     toast
@@ -59,9 +60,7 @@ const Index = () => {
                 Umang Gupta
                 <span className="block heading-gradient">AI/ML Enthusiast & Full-Stack Developer</span>
               </h1>
-              <p className="text-muted-foreground max-w-xl">
-                Building intelligent solutions with AI, Deep Learning & Modern Web Technologies
-              </p>
+              <p className="text-muted-foreground max-w-xl">Ambitious Bachelor of Technology (BTech) professional with strong analytical skills and a proactive learner, eager to apply theoretical knowledge to real-world challenges. </p>
               <div className="flex gap-3">
                 <Button variant="hero" size="xl" asChild>
                   <a href="#projects">View Projects</a>
@@ -73,9 +72,14 @@ const Index = () => {
             </div>
             <div className="flex justify-center md:justify-end">
               <div className="relative size-48 md:size-64 rounded-full bg-secondary border border-border flex items-center justify-center glow-ring-strong">
-                <div className="size-40 md:size-52 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <span className="text-3xl md:text-4xl font-heading">UG</span>
-                </div>
+                <Avatar className="size-40 md:size-52 rounded-full ring-1 ring-border overflow-hidden">
+                  <AvatarImage
+                    src="https://i.postimg.cc/vZmh6Fyz/ma-potrait.jpg"
+                    alt="Umang Gupta portrait"
+                    loading="lazy"
+                  />
+                  <AvatarFallback className="text-3xl md:text-4xl font-heading">UG</AvatarFallback>
+                </Avatar>
               </div>
             </div>
           </div>
@@ -84,7 +88,7 @@ const Index = () => {
         {/* About */}
         <section id="about" className="py-16">
           <div className="grid md:grid-cols-2 gap-10 items-start">
-            <article className="mx-[43px] px-[33px]">
+            <article>
               <h2 className="text-3xl font-heading mb-4">About</h2>
               <p className="text-muted-foreground mb-4">
                 B.Tech in Computer Science Engineering at Graphic Era (Deemed to be University), graduating 2026. Passionate about AI, Machine Learning, and building scalable web applications.
